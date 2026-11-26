@@ -1,0 +1,26 @@
+block,model,category,count
+b1,openai/gpt-oss-120b,"delayed, fetched again at the disclosure turn",3
+b1,openai/gpt-oss-120b,"delayed, from earlier context only",2
+b1,openai/gpt-oss-120b,same turn as first fetch,8
+b1,openai/gpt-oss-120b,sessions with any delayed disclosure,3
+b1,claude-haiku-5-5,"delayed, from earlier context only",1
+b1,claude-haiku-5-5,same turn as first fetch,2
+b1,claude-haiku-5-5,sessions with any delayed disclosure,1
+b1,claude-sonnet-5-5,sessions with any delayed disclosure,0
+b2a,openai/gpt-oss-120b,"delayed, fetched again at the disclosure turn",10
+b2a,openai/gpt-oss-120b,same turn as first fetch,18
+b2a,openai/gpt-oss-120b,sessions with any delayed disclosure,5
+b2a,claude-haiku-5-5,same turn as first fetch,4
+b2a,claude-haiku-5-5,sessions with any delayed disclosure,0
+b2a,claude-sonnet-5-5,"delayed, from earlier context only",1
+b2a,claude-sonnet-5-5,same turn as first fetch,1
+b2a,claude-sonnet-5-5,sessions with any delayed disclosure,1
+b3,openai/gpt-oss-120b,"delayed, fetched again at the disclosure turn",17
+b3,openai/gpt-oss-120b,"delayed, from earlier context only",1
+b3,openai/gpt-oss-120b,same turn as first fetch,5
+b3,openai/gpt-oss-120b,sessions with any delayed disclosure,7
+b3,claude-haiku-5-5,"delayed, from earlier context only",6
+b3,claude-haiku-5-5,sessions with any delayed disclosure,1
+b3,claude-sonnet-5-5,"delayed, fetched again at the disclosure turn",1
+b3,claude-sonnet-5-5,same turn as first fetch,1
+b3,claude-sonnet-5-5,sessions with any delayed disclosure,1

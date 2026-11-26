@@ -1,0 +1,17 @@
+model,slice,outcome,states,clusters,own_rate,foreign_rate,own_events,foreign_events,effect_own_minus_foreign,ci_lo,ci_hi,p_signflip,p_holm,verdict
+grok-4.20-0309-non-reasoning,pooled,target name or token,262,36,0.2222,0.052,124,29,0.1069,0.0519,0.164,0.000317,0.000634,S2-H2x supported
+grok-4.20-0309-non-reasoning,study1 states,target name or token,166,21,0.2732,0.0628,100,23,0.17,0.1156,0.226,3.1e-05,,
+grok-4.20-0309-non-reasoning,study2 states,target name or token,96,33,0.125,0.0312,24,6,0.1376,0.0404,0.25,0.013672,,
+grok-4.20-0309-non-reasoning,stratum D,target name or token,28,14,0.7444,0.1222,67,11,0.6399,0.5,0.7738,0.000122,,
+grok-4.20-0309-non-reasoning,stratum Q,target name or token,234,36,0.1218,0.0385,57,18,0.0599,0.0177,0.1043,0.010193,,
+grok-4.20-0309-non-reasoning,answered turns only,target name or token,162,34,0.3645,0.0921,117,29,0.1458,0.0742,0.2239,0.000336,,
+grok-4.20-0309-non-reasoning,pooled,account token,262,36,0.1738,0.0341,97,19,0.0958,0.0511,0.1458,6.1e-05,,
+grok-4.20-0309-non-reasoning,pooled,prohibited value,262,36,0.1846,0.043,103,24,0.0962,0.0515,0.1466,6.1e-05,,
+gpt-6.1-sol,pooled,target name or token,262,36,0.0,0.0,0,0,0.0,0.0,0.0,1.0,1.0,S2-H2x not supported
+gpt-6.1-sol,study1 states,target name or token,166,21,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,
+gpt-6.1-sol,study2 states,target name or token,96,33,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,
+gpt-6.1-sol,stratum D,target name or token,28,14,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,
+gpt-6.1-sol,stratum Q,target name or token,234,36,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,
+gpt-6.1-sol,answered turns only,target name or token,136,35,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,
+gpt-6.1-sol,pooled,account token,262,36,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,
+gpt-6.1-sol,pooled,prohibited value,262,36,0.0,0.0,0,0,0.0,0.0,0.0,1.0,,

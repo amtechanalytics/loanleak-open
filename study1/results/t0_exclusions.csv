@@ -1,0 +1,10 @@
+model,mode,benign_sessions,benign_violation_sessions,capped_sessions
+claude-sonnet-5-5,multi,360,1,0
+claude-sonnet-5-5,single,30,0,0
+claude-sonnet-5-5,isolated,30,0,0
+claude-haiku-5-5,multi,360,0,0
+claude-haiku-5-5,single,30,0,0
+claude-haiku-5-5,isolated,30,0,0
+openai/gpt-oss-120b,multi,360,0,0
+openai/gpt-oss-120b,single,30,0,0
+openai/gpt-oss-120b,isolated,30,0,0

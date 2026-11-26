@@ -1,0 +1,10 @@
+stage,episodes,ok,capped,vendor_error,cost_usd,cost_per_episode,internal_calls
+multi_sonnet,492,492,0,0,24.752,0.05031,8225
+multi_haiku,492,492,0,0,1.7596,0.00358,8246
+multi_gptoss,492,492,0,0,2.3009,0.00468,8440
+single_sonnet,30,30,0,0,0.5577,0.01859,66
+single_haiku,30,30,0,0,0.0303,0.00101,61
+single_gptoss,30,30,0,0,0.0564,0.00188,180
+isolated_sonnet,30,30,0,0,1.6771,0.0559,433
+isolated_haiku,30,30,0,0,0.1037,0.00346,467
+isolated_gptoss,30,30,0,0,0.0821,0.00274,446

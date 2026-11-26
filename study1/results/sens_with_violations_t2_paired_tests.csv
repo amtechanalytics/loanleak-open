@@ -1,0 +1,43 @@
+model,hypothesis,slice,pairs,A_rate,B_rate,A_only,B_only,diff_ci,p_exact,p_holm
+claude-sonnet-5-5,H1 multi vs single,P-notes R0 benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,
+claude-sonnet-5-5,H4 multi vs isolated,P-notes R0 benign,30,0.0,0.0667,0,2,"-0.0667 [-0.1667, 0.0]",0.5,
+claude-sonnet-5-5,H5 ladder R0->R1,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R1->R2,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R2->R3,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R3->R4,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R4->R5,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R0->R1,P-notes benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R1->R2,P-notes benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R2->R3,P-notes benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-sonnet-5-5,H5 ladder R3->R4,P-notes benign,30,0.0,0.0667,0,2,"-0.0667 [-0.1667, 0.0]",0.5,1.0
+claude-sonnet-5-5,H5 ladder R4->R5,P-notes benign,30,0.0667,0.0,2,0,"0.0667 [0.0, 0.1667]",0.5,1.0
+claude-sonnet-5-5,H6 R5 vs R4 (notes),P-notes benign,30,0.0667,0.0,2,0,"0.0667 [0.0, 0.1667]",0.5,
+claude-sonnet-5-5,H6 P-notes vs P-struct at R4,R4 benign,30,0.0667,0.0,2,0,"0.0667 [0.0, 0.1667]",0.5,
+claude-haiku-5-5,H1 multi vs single,P-notes R0 benign,30,0.0333,0.0,1,0,"0.0333 [0.0, 0.1]",1.0,
+claude-haiku-5-5,H4 multi vs isolated,P-notes R0 benign,30,0.0333,0.0667,0,1,"-0.0333 [-0.1, 0.0]",1.0,
+claude-haiku-5-5,H5 ladder R0->R1,P-struct benign,30,0.0333,0.0,1,0,"0.0333 [0.0, 0.1]",1.0,1.0
+claude-haiku-5-5,H5 ladder R1->R2,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-haiku-5-5,H5 ladder R2->R3,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-haiku-5-5,H5 ladder R3->R4,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-haiku-5-5,H5 ladder R4->R5,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-haiku-5-5,H5 ladder R0->R1,P-notes benign,30,0.0333,0.0,1,0,"0.0333 [0.0, 0.1]",1.0,1.0
+claude-haiku-5-5,H5 ladder R1->R2,P-notes benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-haiku-5-5,H5 ladder R2->R3,P-notes benign,30,0.0,0.0667,0,2,"-0.0667 [-0.1667, 0.0]",0.5,1.0
+claude-haiku-5-5,H5 ladder R3->R4,P-notes benign,30,0.0667,0.0,2,0,"0.0667 [0.0, 0.1667]",0.5,1.0
+claude-haiku-5-5,H5 ladder R4->R5,P-notes benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+claude-haiku-5-5,H6 R5 vs R4 (notes),P-notes benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,
+claude-haiku-5-5,H6 P-notes vs P-struct at R4,R4 benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,
+openai/gpt-oss-120b,H1 multi vs single,P-notes R0 benign,30,0.0333,0.0667,1,2,"-0.0333 [-0.1333, 0.0667]",1.0,
+openai/gpt-oss-120b,H4 multi vs isolated,P-notes R0 benign,30,0.0333,0.0333,1,1,"0.0 [-0.1, 0.1]",1.0,
+openai/gpt-oss-120b,H5 ladder R0->R1,P-struct benign,30,0.0667,0.0,2,0,"0.0667 [0.0, 0.1667]",0.5,1.0
+openai/gpt-oss-120b,H5 ladder R1->R2,P-struct benign,30,0.0,0.0667,0,2,"-0.0667 [-0.1667, 0.0]",0.5,1.0
+openai/gpt-oss-120b,H5 ladder R2->R3,P-struct benign,30,0.0667,0.0,2,0,"0.0667 [0.0, 0.1667]",0.5,1.0
+openai/gpt-oss-120b,H5 ladder R3->R4,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+openai/gpt-oss-120b,H5 ladder R4->R5,P-struct benign,30,0.0,0.0,0,0,"0.0 [0.0, 0.0]",1.0,1.0
+openai/gpt-oss-120b,H5 ladder R0->R1,P-notes benign,30,0.0333,0.0,1,0,"0.0333 [0.0, 0.1]",1.0,1.0
+openai/gpt-oss-120b,H5 ladder R1->R2,P-notes benign,30,0.0,0.2333,0,7,"-0.2333 [-0.4, -0.1]",0.015625,0.15625
+openai/gpt-oss-120b,H5 ladder R2->R3,P-notes benign,30,0.2333,0.3,3,5,"-0.0667 [-0.2333, 0.1]",0.726562,1.0
+openai/gpt-oss-120b,H5 ladder R3->R4,P-notes benign,30,0.3,0.1333,7,2,"0.1667 [-0.0333, 0.3667]",0.179688,1.0
+openai/gpt-oss-120b,H5 ladder R4->R5,P-notes benign,30,0.1333,0.0333,3,0,"0.1 [0.0, 0.2333]",0.25,1.0
+openai/gpt-oss-120b,H6 R5 vs R4 (notes),P-notes benign,30,0.1333,0.0333,3,0,"0.1 [0.0, 0.2333]",0.25,
+openai/gpt-oss-120b,H6 P-notes vs P-struct at R4,R4 benign,30,0.1333,0.0,4,0,"0.1333 [0.0333, 0.2667]",0.125,

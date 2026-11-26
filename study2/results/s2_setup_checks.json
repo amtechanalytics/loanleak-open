@@ -1,0 +1,72 @@
+{
+ "rls": {
+  "fixed_no_base_tables": true,
+  "fixed_profile_masked": true,
+  "open_sees_all": true,
+  "rls_cannot_disable": true,
+  "rls_customer_apps": true,
+  "rls_customer_sees_one": true,
+  "rls_no_scope_sees_none": true,
+  "rls_portfolio_sees_40": true,
+  "rls_row_security_off_refused": true,
+  "roles_read_only": true,
+  "struct_has_no_notes": true
+ },
+ "r3a": {
+  "fails": [],
+  "n_fails": 0,
+  "roles": 40,
+  "struct_access_ok": true
+ },
+ "probe": {
+  "db_checked": 40,
+  "db_equal": 40,
+  "fails": [],
+  "label_checked": 166,
+  "label_ok": 166,
+  "max_payload_chars": 693,
+  "study1_recompute_mismatch": 0,
+  "study1_states": 166
+ },
+ "complete_mask": {
+  "in_scope_kept": 1.0,
+  "missed": 0,
+  "placeholder_format_ok": true,
+  "recall": 1.0,
+  "strings": 1000
+ },
+ "presidio": {
+  "backend": "presidio",
+  "n_per_field": 30,
+  "recall": {
+   "account_token": 1.0,
+   "dob": 1.0,
+   "email": 1.0,
+   "employer": 0.0333,
+   "full_name": 1.0,
+   "phone": 1.0,
+   "ssn": 1.0
+  }
+ },
+ "tool_wiring": {
+  "fails": [],
+  "n_fails": 0,
+  "runs": 144
+ },
+ "violation_rule": {
+  "got": [
+   false,
+   false,
+   true,
+   true
+  ],
+  "loop_sha256": "508cb2b2059b082b090efa7a0a6ba3200195a19f04c2540b17bb4a0922fade3b",
+  "ok": true,
+  "want": [
+   false,
+   false,
+   true,
+   true
+  ]
+ }
+}

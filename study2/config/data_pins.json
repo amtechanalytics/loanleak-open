@@ -1,0 +1,29 @@
+{
+ "pins": [
+  {
+   "name": "hmda_kane_2023",
+   "record": "FFIEC HMDA Data Browser, 2023 one-year dataset, filtered query counties=17089 actions_taken=1,3, retrieved 2026-11-22 from https://files.ffiec.cfpb.gov/data-browser/datasets/2023/filtered-queries/one-year/634c705f1b93bcaf4c2fab5f1d1a4d05.csv; unmodified mirror at commit ec820f8f54804ff9adf5a0f59d5a0f6d704351d1",
+   "title": "HMDA 2023 modified LAR, Kane County IL, originated and denied applications",
+   "url": "https://raw.githubusercontent.com/amtechanalytics/loan-data-mirror/ec820f8f54804ff9adf5a0f59d5a0f6d704351d1/hmda_kane_2023.csv",
+   "file": "hmda_kane_2023.csv",
+   "size": 4468151,
+   "sha256": "23efa93f9cbbb3088e8406b80bb66bfd411d9a4c228c58a3d871d2572cebe644",
+   "format": "csv",
+   "encoding": "utf-8",
+   "min_rows": 11000,
+   "expected_rows": 11658,
+   "columns": [
+    "action_taken",
+    "loan_amount",
+    "income",
+    "debt_to_income_ratio",
+    "loan_purpose",
+    "denial_reason-1",
+    "state_code",
+    "county_code"
+   ],
+   "unique_key": null,
+   "licence": "US Government work (FFIEC/CFPB HMDA public data), no copyright"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+# Exact model ids only. Sampling parameters (temperature, top_p) are not allowed: vendor default.
+# accessed: the date the id and its availability were checked.
+# Cross-model run (approach section 17): two assistant models from developers not tested in Study 2.
+models:
+  - id: gpt-6.1-sol
+    provider: openai             # vendor default reasoning (medium); this model accepts no effort none and no
+    max_output_tokens: 16384     # function tools on Chat Completions, so tools are described in the prompt
+    context_tokens: 1050000
+    concurrency: 6
+    tpm_budget: 0
+    batch: false
+    tools: prompted
+    accessed: "2026-11-24"
+  - id: grok-4.20-0309-non-reasoning
+    provider: xai
+    max_output_tokens: 8192      # non-reasoning variant: the harness counts completion tokens only
+    context_tokens: 1000000
+    concurrency: 4
+    tpm_budget: 0
+    batch: false
+    tools: native
+    accessed: "2026-11-24"

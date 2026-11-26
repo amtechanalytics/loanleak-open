@@ -1,0 +1,16 @@
+{
+  "b2f_grok": {
+    "capped": 4,
+    "foreign_target": 29,
+    "ok": 1112,
+    "own_target": 124,
+    "rows": 1116
+  },
+  "b2f_sol": {
+    "capped": 0,
+    "foreign_target": 0,
+    "ok": 1116,
+    "own_target": 0,
+    "rows": 1116
+  }
+}

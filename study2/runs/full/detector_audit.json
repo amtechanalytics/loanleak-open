@@ -1,0 +1,66 @@
+{
+  "by_field_kind": [
+    {
+      "complete_removed": 70,
+      "field": "account_token",
+      "kind": "co-borrower",
+      "present": 70,
+      "presidio_removed": 70
+    },
+    {
+      "complete_removed": 49,
+      "field": "account_token",
+      "kind": "household",
+      "present": 49,
+      "presidio_removed": 49
+    },
+    {
+      "complete_removed": 46,
+      "field": "account_token",
+      "kind": "referral",
+      "present": 46,
+      "presidio_removed": 46
+    },
+    {
+      "complete_removed": 107,
+      "field": "account_token",
+      "kind": "similar case",
+      "present": 107,
+      "presidio_removed": 107
+    },
+    {
+      "complete_removed": 70,
+      "field": "full_name",
+      "kind": "co-borrower",
+      "present": 70,
+      "presidio_removed": 70
+    },
+    {
+      "complete_removed": 49,
+      "field": "full_name",
+      "kind": "household",
+      "present": 49,
+      "presidio_removed": 22
+    },
+    {
+      "complete_removed": 47,
+      "field": "full_name",
+      "kind": "referral",
+      "present": 47,
+      "presidio_removed": 18
+    },
+    {
+      "complete_removed": 108,
+      "field": "full_name",
+      "kind": "similar case",
+      "present": 108,
+      "presidio_removed": 108
+    }
+  ],
+  "in_scope": {
+    "complete_removed": 0,
+    "in_scope_present": 2,
+    "presidio_removed": 0
+  },
+  "payloads": 229
+}

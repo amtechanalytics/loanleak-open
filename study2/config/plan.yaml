@@ -1,0 +1,284 @@
+pilot_per_cell: 1
+canary_per_cell: 1
+coverage_dims: []
+batch_poll_seconds: 30
+stages:
+  goals:
+    models:
+    - claude-haiku-5-5
+    groups_per_model: 1
+    cells_per_model: 24
+    avg_prefix_tokens: 450
+    avg_item_tokens: 60
+    avg_out_tokens: 1500
+    max_prompt_tokens: 2500
+    batch: false
+    cache: false
+  b1_sonnet:
+    kind: agent
+    models:
+    - claude-sonnet-5-5
+    - claude-haiku-5-5
+    episodes: 48
+    groups: 2
+    calls_per_episode:
+      claude-sonnet-5-5:
+        avg: 12
+        max: 18
+        worst_prompt_total: 1665788
+      claude-haiku-5-5:
+        avg: 5
+        max: 6
+        worst_prompt_total: 181275
+    avg_prompt_tokens: 800
+    max_prompt_tokens: 181723
+    avg_out_tokens: 300
+    caps: &id001
+      max_turns: 6
+      max_tool_calls_per_turn: 12
+      max_internal_calls_per_episode: 24
+      max_tokens: 8192
+    protocol:
+      claude-sonnet-5-5: native
+      claude-haiku-5-5: native
+    cache: false
+  b1_haiku:
+    kind: agent
+    models:
+    - claude-haiku-5-5
+    episodes: 48
+    groups: 2
+    calls_per_episode:
+      claude-haiku-5-5:
+        avg: 17
+        max: 24
+        worst_prompt_total: 1846878
+    avg_prompt_tokens: 800
+    max_prompt_tokens: 181706
+    avg_out_tokens: 300
+    caps: *id001
+    protocol:
+      claude-haiku-5-5: native
+    cache: false
+  b1_gptoss:
+    kind: agent
+    models:
+    - openai/gpt-oss-120b
+    - claude-haiku-5-5
+    episodes: 48
+    groups: 2
+    calls_per_episode:
+      openai/gpt-oss-120b:
+        avg: 12
+        max: 18
+        worst_prompt_total: 818514
+      claude-haiku-5-5:
+        avg: 5
+        max: 6
+        worst_prompt_total: 110619
+    avg_prompt_tokens: 1100
+    max_prompt_tokens: 88204
+    avg_out_tokens: 300
+    caps: &id002
+      max_turns: 6
+      max_tool_calls_per_turn: 12
+      max_internal_calls_per_episode: 24
+      max_tokens: 4096
+    protocol:
+      openai/gpt-oss-120b: native
+      claude-haiku-5-5: native
+    cache: false
+  b2a_sonnet:
+    kind: agent
+    models:
+    - claude-sonnet-5-5
+    - claude-haiku-5-5
+    episodes: 160
+    groups: 4
+    calls_per_episode:
+      claude-sonnet-5-5:
+        avg: 12
+        max: 18
+        worst_prompt_total: 1665788
+      claude-haiku-5-5:
+        avg: 5
+        max: 6
+        worst_prompt_total: 181275
+    avg_prompt_tokens: 800
+    max_prompt_tokens: 181723
+    avg_out_tokens: 300
+    caps: *id001
+    protocol:
+      claude-sonnet-5-5: native
+      claude-haiku-5-5: native
+    cache: false
+  b2a_haiku:
+    kind: agent
+    models:
+    - claude-haiku-5-5
+    episodes: 160
+    groups: 4
+    calls_per_episode:
+      claude-haiku-5-5:
+        avg: 17
+        max: 24
+        worst_prompt_total: 1846878
+    avg_prompt_tokens: 800
+    max_prompt_tokens: 181706
+    avg_out_tokens: 300
+    caps: *id001
+    protocol:
+      claude-haiku-5-5: native
+    cache: false
+  b2a_gptoss:
+    kind: agent
+    models:
+    - openai/gpt-oss-120b
+    - claude-haiku-5-5
+    episodes: 160
+    groups: 4
+    calls_per_episode:
+      openai/gpt-oss-120b:
+        avg: 12
+        max: 18
+        worst_prompt_total: 818514
+      claude-haiku-5-5:
+        avg: 5
+        max: 6
+        worst_prompt_total: 110619
+    avg_prompt_tokens: 1100
+    max_prompt_tokens: 88204
+    avg_out_tokens: 300
+    caps: *id002
+    protocol:
+      openai/gpt-oss-120b: native
+      claude-haiku-5-5: native
+    cache: false
+  b3_sonnet:
+    kind: agent
+    models:
+    - claude-sonnet-5-5
+    - claude-haiku-5-5
+    episodes: 180
+    groups: 6
+    calls_per_episode:
+      claude-sonnet-5-5:
+        avg: 12
+        max: 18
+        worst_prompt_total: 1665788
+      claude-haiku-5-5:
+        avg: 5
+        max: 6
+        worst_prompt_total: 181275
+    avg_prompt_tokens: 800
+    max_prompt_tokens: 181723
+    avg_out_tokens: 300
+    caps: *id001
+    protocol:
+      claude-sonnet-5-5: native
+      claude-haiku-5-5: native
+    cache: false
+  b3_haiku:
+    kind: agent
+    models:
+    - claude-haiku-5-5
+    episodes: 180
+    groups: 6
+    calls_per_episode:
+      claude-haiku-5-5:
+        avg: 17
+        max: 24
+        worst_prompt_total: 1846878
+    avg_prompt_tokens: 800
+    max_prompt_tokens: 181706
+    avg_out_tokens: 300
+    caps: *id001
+    protocol:
+      claude-haiku-5-5: native
+    cache: false
+  b3_gptoss:
+    kind: agent
+    models:
+    - openai/gpt-oss-120b
+    - claude-haiku-5-5
+    episodes: 180
+    groups: 6
+    calls_per_episode:
+      openai/gpt-oss-120b:
+        avg: 12
+        max: 18
+        worst_prompt_total: 818514
+      claude-haiku-5-5:
+        avg: 5
+        max: 6
+        worst_prompt_total: 110619
+    avg_prompt_tokens: 1100
+    max_prompt_tokens: 88204
+    avg_out_tokens: 300
+    caps: *id002
+    protocol:
+      openai/gpt-oss-120b: native
+      claude-haiku-5-5: native
+    cache: false
+  b2f_sonnet:
+    kind: agent
+    models:
+    - claude-sonnet-5-5
+    episodes: 1116
+    groups: 6
+    calls_per_episode:
+      claude-sonnet-5-5:
+        avg: 1.5
+        max: 2
+        worst_prompt_total: 120000
+    avg_prompt_tokens: 2500
+    max_prompt_tokens: 60000
+    avg_out_tokens: 300
+    caps: &id003
+      max_turns: 1
+      max_tool_calls_per_turn: 4
+      max_internal_calls_per_episode: 2
+      max_tokens: 8192
+    protocol:
+      claude-sonnet-5-5: native
+    cache: false
+  b2f_haiku:
+    kind: agent
+    models:
+    - claude-haiku-5-5
+    episodes: 1116
+    groups: 6
+    calls_per_episode:
+      claude-haiku-5-5:
+        avg: 1.5
+        max: 2
+        worst_prompt_total: 120000
+    avg_prompt_tokens: 2500
+    max_prompt_tokens: 60000
+    avg_out_tokens: 300
+    caps: *id003
+    protocol:
+      claude-haiku-5-5: native
+    cache: false
+  b2f_gptoss:
+    kind: agent
+    models:
+    - openai/gpt-oss-120b
+    episodes: 1116
+    groups: 6
+    calls_per_episode:
+      openai/gpt-oss-120b:
+        avg: 1.5
+        max: 2
+        worst_prompt_total: 120000
+    avg_prompt_tokens: 2500
+    max_prompt_tokens: 60000
+    avg_out_tokens: 300
+    caps:
+      max_turns: 1
+      max_tool_calls_per_turn: 4
+      max_internal_calls_per_episode: 2
+      max_tokens: 4096
+    protocol:
+      openai/gpt-oss-120b: native
+    cache: false

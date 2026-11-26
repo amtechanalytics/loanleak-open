@@ -1,0 +1,11 @@
+field,note_relationship,present,presidio_removed,complete_removed,presidio_recall,complete_recall
+account_token,co-borrower,70,70,70,1.0,1.0
+account_token,household,49,49,49,1.0,1.0
+account_token,referral,46,46,46,1.0,1.0
+account_token,similar case,107,107,107,1.0,1.0
+full_name,co-borrower,70,70,70,1.0,1.0
+full_name,household,49,22,49,0.449,1.0
+full_name,referral,47,18,47,0.383,1.0
+full_name,similar case,108,108,108,1.0,1.0
+in-scope (permitted) values,all,2,0,0,,
+payloads,all,229,,,,

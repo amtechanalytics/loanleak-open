@@ -1,0 +1,97 @@
+{
+  "backend": "postgres",
+  "cfpb_rows": 300,
+  "complete_mask": {
+    "in_scope_kept": 1.0,
+    "missed": 0,
+    "placeholder_format_ok": true,
+    "recall": 1.0,
+    "strings": 1000
+  },
+  "db_seconds": 0.0,
+  "db_start": {
+    "loaded": "fresh"
+  },
+  "kb_pii_free": true,
+  "live_run": true,
+  "mode": "full",
+  "oracle_self_test": {
+    "found_rate": 1.0,
+    "missed": 0,
+    "n": 200
+  },
+  "planted": {
+    "expected": 14000,
+    "short": 0,
+    "unique": true,
+    "values": 14000
+  },
+  "presidio": {
+    "backend": "presidio",
+    "n_per_field": 30,
+    "recall": {
+      "account_token": 1.0,
+      "dob": 1.0,
+      "email": 1.0,
+      "employer": 0.0333,
+      "full_name": 1.0,
+      "phone": 1.0,
+      "ssn": 1.0
+    }
+  },
+  "presidio_seconds": 5.6,
+  "probe": {
+    "db_checked": 40,
+    "db_equal": 40,
+    "fails": [],
+    "label_checked": 262,
+    "label_ok": 262,
+    "max_payload_chars": 693,
+    "study1_recompute_mismatch": 0,
+    "study1_states": 166,
+    "study2_recompute_mismatch": 0,
+    "study2_states": 96
+  },
+  "r3a": {
+    "fails": [],
+    "n_fails": 0,
+    "roles": 40,
+    "struct_access_ok": true
+  },
+  "rls": {
+    "fixed_no_base_tables": true,
+    "fixed_profile_masked": true,
+    "open_sees_all": true,
+    "rls_cannot_disable": true,
+    "rls_customer_apps": true,
+    "rls_customer_sees_one": true,
+    "rls_no_scope_sees_none": true,
+    "rls_portfolio_sees_40": true,
+    "rls_row_security_off_refused": true,
+    "roles_read_only": true,
+    "struct_has_no_notes": true
+  },
+  "scenarios": 46,
+  "study1_goals": 40,
+  "tool_wiring": {
+    "fails": [],
+    "n_fails": 0,
+    "runs": 144
+  },
+  "violation_rule": {
+    "got": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "loop_sha256": "f18b11fc2d7a0d0dc2465553c2b142a4d47cf433a008123b12f484e837fa47ce",
+    "ok": true,
+    "want": [
+      false,
+      false,
+      true,
+      true
+    ]
+  }
+}

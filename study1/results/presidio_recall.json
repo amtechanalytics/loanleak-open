@@ -1,0 +1,13 @@
+{
+ "backend": "presidio",
+ "n_per_field": 30,
+ "recall": {
+  "account_token": 1.0,
+  "dob": 1.0,
+  "email": 1.0,
+  "employer": 0.0333,
+  "full_name": 1.0,
+  "phone": 1.0,
+  "ssn": 1.0
+ }
+}

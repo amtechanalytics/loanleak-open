@@ -1,0 +1,13 @@
+stage,episodes,benign_violation,capped,vendor_error,skipped_slots
+b1_sonnet,48,0,0,0,0
+b1_haiku,48,0,0,0,0
+b1_gptoss,48,0,0,0,0
+b2a_sonnet,160,0,0,0,0
+b2a_haiku,160,0,0,0,0
+b2a_gptoss,160,0,0,0,0
+b3_sonnet,180,0,0,0,0
+b3_haiku,180,0,0,0,0
+b3_gptoss,180,0,0,0,0
+b2f_sonnet,1116,0,16,0,0
+b2f_haiku,1116,0,4,0,0
+b2f_gptoss,1116,0,0,0,0

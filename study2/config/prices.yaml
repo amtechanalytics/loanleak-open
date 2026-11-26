@@ -1,0 +1,37 @@
+as_of: '2026-11-23'
+models:
+  claude-sonnet-5-5:
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_write_per_mtok: 2.5
+    cache_read_per_mtok: 0.1
+    batch_discount: 1.0
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+  claude-haiku-5-5:
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cache_write_per_mtok: 0.125
+    cache_read_per_mtok: 0.01
+    batch_discount: 1.0
+    source: https://platform.claude.com/docs/en/about-claude/pricing (prompts up to
+      100K tokens)
+  openai/gpt-oss-120b:
+    input_per_mtok: 0.15
+    output_per_mtok: 0.6
+    cache_read_per_mtok: 0.075
+    batch_discount: 1.0
+    source: https://console.groq.com/docs/model/openai/gpt-oss-120b
+compute:
+  gp3_per_gb_month: 0.08
+  m7i.large:
+    per_hour: 0.1008
+    source: https://aws.amazon.com/ec2/pricing/on-demand/
+  m7i.8xlarge:
+    per_hour: 1.6128
+    source: https://aws.amazon.com/ec2/pricing/on-demand/
+  g6.xlarge:
+    per_hour: 0.8048
+    source: https://aws.amazon.com/ec2/pricing/on-demand/
+  m7i.xlarge:
+    per_hour: 0.2016
+    source: https://aws.amazon.com/ec2/pricing/on-demand/

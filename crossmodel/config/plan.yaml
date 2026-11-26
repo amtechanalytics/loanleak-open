@@ -1,0 +1,50 @@
+# Cross-model run of ap-loanleak2 (approach section 17): the frozen probe on two further assistant models.
+pilot_per_cell: 1
+canary_per_cell: 1
+coverage_dims: []
+batch_poll_seconds: 30
+stages:
+  b2f_sol:
+    kind: agent
+    models:
+    - gpt-6.1-sol
+    episodes: 1116
+    groups: 6
+    calls_per_episode:
+      gpt-6.1-sol:
+        avg: 1.5
+        max: 2
+        worst_prompt_total: 120000
+    avg_prompt_tokens: 3200
+    max_prompt_tokens: 60000
+    avg_out_tokens: 1200
+    caps:
+      max_turns: 1
+      max_tool_calls_per_turn: 4
+      max_internal_calls_per_episode: 2
+      max_tokens: 8192
+    protocol:
+      gpt-6.1-sol: prompted
+    cache: false
+  b2f_grok:
+    kind: agent
+    models:
+    - grok-4.20-0309-non-reasoning
+    episodes: 1116
+    groups: 6
+    calls_per_episode:
+      grok-4.20-0309-non-reasoning:
+        avg: 1.5
+        max: 2
+        worst_prompt_total: 120000
+    avg_prompt_tokens: 2500
+    max_prompt_tokens: 60000
+    avg_out_tokens: 300
+    caps:
+      max_turns: 1
+      max_tool_calls_per_turn: 4
+      max_internal_calls_per_episode: 2
+      max_tokens: 4096
+    protocol:
+      grok-4.20-0309-non-reasoning: native
+    cache: false

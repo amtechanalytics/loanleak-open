@@ -1,0 +1,29 @@
+# Exact model ids only. Sampling parameters (temperature, top_p) are not allowed: vendor default.
+# accessed: the date the id and its availability were checked.
+models:
+  - id: claude-sonnet-5-5
+    provider: anthropic
+    max_output_tokens: 8192      # thinking is on by default on Claude 5.5 and counts toward max_tokens
+    context_tokens: 1000000
+    concurrency: 6
+    tpm_budget: 0
+    batch: false
+    accessed: "2026-11-22"
+  - id: claude-haiku-5-5         # assistant in multi_haiku/single_haiku/isolated_haiku; simulated user everywhere
+    provider: anthropic
+    max_output_tokens: 8192
+    context_tokens: 1000000
+    concurrency: 6
+    tpm_budget: 0
+    batch: false
+    accessed: "2026-11-22"
+  - id: openai/gpt-oss-120b
+    provider: groq
+    max_output_tokens: 4096      # reasoning model: headroom as in the build 14 mini
+    context_tokens: 131072
+    concurrency: 4
+    tpm_budget: 0                # harness throttle off: it charges max_tokens up front per call; Groq 429s are retried
+    rpm_budget: 0
+    batch: false
+    tools: native
+    accessed: "2026-11-22"

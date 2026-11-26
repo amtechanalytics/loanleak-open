@@ -1,0 +1,4 @@
+model,test,pairs,A_rate,B_rate,A_only,B_only,diff,ci_lo,ci_hi,p_exact,p_holm
+claude-sonnet-5-5,S2-H1 P-notes vs P-struct (prohibited),24,0.0,0.0,0,0,0.0,0.0,0.0,1.0,
+claude-haiku-5-5,S2-H1 P-notes vs P-struct (prohibited),24,0.0417,0.0,1,0,0.0417,0.0,0.125,1.0,
+openai/gpt-oss-120b,S2-H1 P-notes vs P-struct (prohibited),24,0.25,0.0,6,0,0.25,0.0833,0.4167,0.03125,

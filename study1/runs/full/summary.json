@@ -1,0 +1,47 @@
+{
+  "isolated_gptoss": {
+    "capped": 0,
+    "disclosed": 1,
+    "episodes": 30
+  },
+  "isolated_haiku": {
+    "capped": 0,
+    "disclosed": 2,
+    "episodes": 30
+  },
+  "isolated_sonnet": {
+    "capped": 0,
+    "disclosed": 2,
+    "episodes": 30
+  },
+  "multi_gptoss": {
+    "capped": 0,
+    "disclosed": 30,
+    "episodes": 492
+  },
+  "multi_haiku": {
+    "capped": 0,
+    "disclosed": 7,
+    "episodes": 492
+  },
+  "multi_sonnet": {
+    "capped": 0,
+    "disclosed": 4,
+    "episodes": 492
+  },
+  "single_gptoss": {
+    "capped": 0,
+    "disclosed": 2,
+    "episodes": 30
+  },
+  "single_haiku": {
+    "capped": 0,
+    "disclosed": 0,
+    "episodes": 30
+  },
+  "single_sonnet": {
+    "capped": 0,
+    "disclosed": 0,
+    "episodes": 30
+  }
+}
